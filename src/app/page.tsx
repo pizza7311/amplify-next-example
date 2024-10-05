@@ -8,7 +8,7 @@ export default async function Home() {
     <div>
       <title>this is main</title>
       <ul>
-        {names.map(({ name, id }) => {
+        {names.map(({ name, id }: { name: string; id: number }) => {
           return (
             <li key={id}>
               <Link href={`/${id}`}>{name}</Link>
